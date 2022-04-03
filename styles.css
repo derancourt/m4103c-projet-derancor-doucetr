@@ -53,6 +53,11 @@ p#explication {
 	flex: 1 1 auto;
 }
 
+#bloc-choix{
+	display: flex;
+	justify-content: space-around;
+}
+
 #bloc-recherche {
 	display: flex;
 	margin: 0 auto ;

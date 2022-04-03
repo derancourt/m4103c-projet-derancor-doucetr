@@ -1,6 +1,8 @@
+var link = "https://age-of-empires-2-api.herokuapp.com/api/v1/structure/";
+
 document.getElementById("rc").addEventListener('input', function(){
   if(this.value.length == 4){
-    fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(`https://age-of-empires-2-api.herokuapp.com/api/v1/structure/${this.value}`)}`)
+    fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(`${link}${this.value}`)}`)
     .then(response => {
             if (response.ok) return response.json().then((data) =>{
               const json = data.contents;
@@ -19,6 +21,25 @@ document.getElementById("rc").addEventListener('input', function(){
 });
 
 /*
+//fonction permettant le choix des différentes catégories et qui vérifie si elle est bien sélectionner (unités, technologies, structures ou civilisations)
+function choixCategories() {
+  if (document.getElementByClassName("choix").value == "unit") {
+    link = "https://age-of-empires-2-api.herokuapp.com/api/v1/unit/";
+  }
+  else if (document.getElementByClassName("choix").value == "civ") {
+    link = "https://age-of-empires-2-api.herokuapp.com/api/v1/civilization/";
+  }
+  else if (document.getElementByClassName("choix").value == "struct") {
+    link = "https://age-of-empires-2-api.herokuapp.com/api/v1/structure/";
+  }
+  else if (document.getElementByClassName("choix").value == "tech") {
+    link = "https://age-of-empires-2-api.herokuapp.com/api/v1/technology/";
+  }
+}
+
+
+/*
+//fonction permettant d'ajouter une recherche en favoris
 function addFavoris() {
   if (document.getElementById("btn-favoris") == true) {
 
