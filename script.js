@@ -18,8 +18,10 @@ document.getElementById("rc").addEventListener('input', function(){
   }
 });
 
+/*
 function addFavoris() {
   if (document.getElementById("btn-favoris") == true) {
-    
+
   }
 }
+*/
