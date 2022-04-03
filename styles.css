@@ -165,3 +165,67 @@ p#explication {
 		flex: 0;
 	}
 }
+
+/*Style JS*/
+
+ul li{
+  list-style-type: none;
+}
+
+.structures{
+  padding: 20px;
+  border-radius: 25% 10%;
+  width: 500px;
+  box-shadow: 6px 0 .4em grey, -1em 0 .4em grey;
+  background: linear-gradient(#34495e, rgb(26, 188, 156));
+  color:white;
+  font-family: Arial;
+  font-size: 11px;
+}
+
+.structures .name{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.st{
+  display: flex;
+}
+
+.st p{
+  margin : auto;
+  margin-left: 20px;
+  font-size: 2em;
+}
+
+.st h1{
+  margin : auto;
+}
+
+.st2{
+  display: flex;
+}
+
+.st2 p{
+  margin : auto;
+  margin-left: 20px;
+  font-size: 1.4em;
+}
+
+.st2 h1{
+  margin : auto;
+}
+
+.infos{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info1{
+  margin-left: 30px;
+}
+
+.info2{
+  margin-right: 30px;
+}
