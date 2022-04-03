@@ -58,6 +58,7 @@ p#explication {
 	margin: 0 auto ;
 	min-width: 450px;
 	flex-direction: row;
+	margin-bottom: 50px;
 }
 
 #bloc-recherche>input[type=text],
@@ -114,6 +115,12 @@ p#explication {
 	/* Affichage d'une flèche devant chaque résultat
 		(Cf. https://unicode-table.com/fr/21E8/ ) */
 	content: "\21E8\00A0";
+}
+
+#bloc-resultats ul{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 /* Section de la barre de séparation */
@@ -181,6 +188,7 @@ ul li{
   color:white;
   font-family: Arial;
   font-size: 11px;
+	margin-bottom: 30px;
 }
 
 .structures .name{

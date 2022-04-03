@@ -1,5 +1,5 @@
 document.getElementById("rc").addEventListener('input', function(){
-  if(this.value.length == 5){
+  if(this.value.length == 4){
     fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(`https://age-of-empires-2-api.herokuapp.com/api/v1/structure/${this.value}`)}`)
     .then(response => {
             if (response.ok) return response.json().then((data) =>{
@@ -17,3 +17,9 @@ document.getElementById("rc").addEventListener('input', function(){
     .then(data => console.log(data));
   }
 });
+
+function addFavoris() {
+  if (document.getElementById("btn-favoris") == true) {
+    
+  }
+}
