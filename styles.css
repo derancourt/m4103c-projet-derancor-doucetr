@@ -53,9 +53,42 @@ p#explication {
 	flex: 1 1 auto;
 }
 
+/*Bloc Choix*/
 #bloc-choix{
 	display: flex;
 	justify-content: space-around;
+	padding-bottom: 30px;
+}
+
+.radio-btn{
+	width: 55px;
+	height: 25px;
+	border: 2px solid white;
+	border-radius: 5%;
+	margin-left: 25px;
+	padding: 8px;
+}
+
+.radio-btn .check{
+	width: 55px;
+	border: 2px solid white;
+	border-radius: 5%;
+	display: none;
+	opacity: 0;
+	transition: 0.5s ease;
+}
+
+.radio-btn input:checked + .check{
+	display: inline-block;
+	opacity: 1;
+}
+
+.radio-btn input{
+	display: none;
+}
+
+.radio-btn input:checked{
+	color: red;
 }
 
 #bloc-recherche {
