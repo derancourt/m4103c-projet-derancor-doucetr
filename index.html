@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon-js.ico">
 	<link rel="stylesheet" href="styles.css">
-	<script src="vanilla_cookies.js"></script>
+
 </head>
 <body>
 	<header>
@@ -24,28 +24,28 @@
 						<label class="radio-btn">
 						<input type="radio" id="struct" name="choix" class="choix" value="struct"
 						checked>
-						<span class="check"></span>
+						<span class="check">&#10003;</span>
 						Structures</label>
 					</div>
 
 					<div>
 						<label class="radio-btn">
-						<input type="radio" id="unit" name="choix" class="choix" value="unit">
-						<span class="check"></span>
+						<input type="radio" id="unit" name="choix" class="choix" value="unit" onclick="choix_recherche()">
+						<span class="check">&#10003;</span>
 						Unités</label>
 					</div>
 
 					<div>
 						<label class="radio-btn">
-						<input type="radio" id="civ" name="choix" class="choix" value="civ">
-						<span class="check"></span>
+						<input type="radio" id="civ" name="choix" class="choix" value="civ"onclick="choix_recherche()">
+						<span class="check">&#10003;</span>
 						Civilisations</label>
 					</div>
 
 					<div>
 						<label class="radio-btn">
 						<input type="radio" id="tech" name="choix" class="choix" value="tech">
-						<span class="check"></span>
+						<span class="check">&#10003;</span>
 						Technologies</label>
 					</div>
 				</div>
@@ -87,7 +87,14 @@
 	<section id="section-favoris">
 		<h2>Recherches favorites</h2>
 				<p>Cliquer sur une recherche favorite ci-dessus pour relancer celle-ci :</p>
-				<div id="bloc-favoris">
+				<h1>Civs favorites :</h1>
+				<div id="bloc-favoris-civs">
+
+
+				</div>
+				<h1>Units favoris :</h1>
+				<div id="bloc-favoris-units">
+
 
 				</div>
 	</section>

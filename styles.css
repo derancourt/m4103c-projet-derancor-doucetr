@@ -70,17 +70,12 @@ p#explication {
 }
 
 .radio-btn .check{
-	width: 55px;
-	border: 2px solid white;
-	border-radius: 5%;
 	display: none;
-	opacity: 0;
-	transition: 0.5s ease;
 }
 
 .radio-btn input:checked + .check{
 	display: inline-block;
-	opacity: 1;
+	color: green;
 }
 
 .radio-btn input{
