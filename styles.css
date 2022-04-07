@@ -144,6 +144,12 @@ p#explication {
 	text-align: center;
 }
 
+#bloc-resultats{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
 #bloc-resultats p.res::before{
 	/* Affichage d'une flèche devant chaque résultat
 		(Cf. https://unicode-table.com/fr/21E8/ ) */
@@ -155,6 +161,111 @@ p#explication {
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
+
+/*STYLE RESULTAT UNITS*/
+#div12{
+	margin: 30px;
+	border-radius: 10%;
+	padding: 20px;
+	background: linear-gradient(rgb(26, 188, 156), #34495e);
+	box-shadow: 6px 0 .4em cyan;
+}
+
+#div12 > li{
+	text-align: center;
+	padding: 5px;
+}
+
+#div12 li:first-child{
+	font-size: 1.5em;
+}
+
+#div12 input{
+	background-color: #5CEE8D;
+	border-radius: 150px;
+	padding: 5px 15px 5px 15px;
+	border: none;
+	text-align: center;
+}
+
+/*STYLE RESULTAT CIVILISATIONS*/
+#div13{
+	margin: 30px;
+	border-radius: 10%;
+	padding: 20px;
+	background: linear-gradient(rgb(255, 196, 60), #34495e);
+	box-shadow: 6px 0 .4em #fde447;
+}
+
+#div13 > li{
+	text-align: center;
+	padding: 5px;
+}
+
+#div13 li:first-child{
+	font-size: 1.5em;
+}
+
+#div13 input{
+	background-color: #ff921d;
+	border-radius: 150px;
+	padding: 5px 15px 5px 15px;
+	border: none;
+	text-align: center;
+}
+
+/*STYLE RESULTAT TECHNOLOGIES*/
+#div14{
+	margin: 30px;
+	border-radius: 10%;
+	padding: 20px;
+	background: linear-gradient(rgb(0, 224, 255), #34495e);
+	box-shadow: 6px 0 .4em #009eff;
+}
+
+#div14 > li{
+	text-align: center;
+	padding: 5px;
+}
+
+#div14 li:first-child{
+	font-size: 1.5em;
+}
+
+#div14 input{
+	background-color: #0186d7;
+	border-radius: 150px;
+	padding: 5px 15px 5px 15px;
+	border: none;
+	text-align: center;
+}
+
+/*STYLE RESULTAT STRUCTURES*/
+#div15{
+	margin: 30px;
+	border-radius: 10%;
+	padding: 20px;
+	background: linear-gradient(rgb(163, 11, 255), #34495e);
+	box-shadow: 6px 0 .4em #ed0bff;
+}
+
+#div15 > li{
+	text-align: center;
+	padding: 5px;
+}
+
+#div15 li:first-child{
+	font-size: 1.5em;
+}
+
+#div15 input{
+	background-color: #9b0bff;
+	border-radius: 150px;
+	padding: 5px 15px 5px 15px;
+	border: none;
+	text-align: center;
+}
+
 
 /* Section de la barre de séparation */
 #section-separation {

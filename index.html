@@ -22,7 +22,7 @@
 				<div id="bloc-choix">
 					<div>
 						<label class="radio-btn">
-						<input type="radio" id="struct" name="choix" class="choix" value="struct"
+						<input type="radio" id="struct" name="choix" class="choix" value="struct" onclick="choix_recherche()"
 						checked>
 						<span class="check">&#10003;</span>
 						Structures</label>
@@ -37,14 +37,14 @@
 
 					<div>
 						<label class="radio-btn">
-						<input type="radio" id="civ" name="choix" class="choix" value="civ"onclick="choix_recherche()">
+						<input type="radio" id="civ" name="choix" class="choix" value="civ" onclick="choix_recherche()">
 						<span class="check">&#10003;</span>
 						Civilisations</label>
 					</div>
 
 					<div>
 						<label class="radio-btn">
-						<input type="radio" id="tech" name="choix" class="choix" value="tech">
+						<input type="radio" id="tech" name="choix" class="choix" value="tech" onclick="choix_recherche()">
 						<span class="check">&#10003;</span>
 						Technologies</label>
 					</div>
@@ -73,8 +73,8 @@
 		</div>
 
 		<!-- Résultats de recherche -->
-		<div id="bloc-gif-attente">
-			<img src='images/attente-ajax.gif' alt="GIF Attente de résultats" width=50 />
+		<div id="bloc-gif">
+			<img src='images/attente-ajax.gif' alt="GIF Attente de résultats" width=50 id="attente" hidden/>
 		</div>
 		<div id="bloc-resultats">
 		</div>
@@ -87,15 +87,17 @@
 	<section id="section-favoris">
 		<h2>Recherches favorites</h2>
 				<p>Cliquer sur une recherche favorite ci-dessus pour relancer celle-ci :</p>
-				<h1>Civs favorites :</h1>
+				<h3>Civs favoris</h3>
 				<div id="bloc-favoris-civs">
-
-
 				</div>
-				<h1>Units favoris :</h1>
+				<h3>Units favoris</h3>
 				<div id="bloc-favoris-units">
-
-
+				</div>
+				<h3>Structs favoris</h3>
+				<div id="bloc-favoris-structs">
+				</div>
+				<h3>Techno favoris</h3>
+				<div id="bloc-favoris-techs">
 				</div>
 	</section>
 
